@@ -10,7 +10,6 @@
 		081B03561C599A6C00C8346D /* BookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081B03551C599A6C00C8346D /* BookTableViewController.m */; };
 		5D9317C41C59742400C897C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317C31C59742400C897C1 /* main.m */; };
 		5D9317C71C59742400C897C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317C61C59742400C897C1 /* AppDelegate.m */; };
-		5D9317CA1C59742400C897C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317C91C59742400C897C1 /* ViewController.m */; };
 		5D9317CD1C59742400C897C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9317CB1C59742400C897C1 /* Main.storyboard */; };
 		5D9317D01C59742400C897C1 /* BookClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317CE1C59742400C897C1 /* BookClub.xcdatamodeld */; };
 		5D9317D21C59742400C897C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9317D11C59742400C897C1 /* Assets.xcassets */; };
@@ -28,8 +27,6 @@
 		5D9317C31C59742400C897C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D9317C51C59742400C897C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D9317C61C59742400C897C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5D9317C81C59742400C897C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5D9317C91C59742400C897C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5D9317CC1C59742400C897C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D9317CF1C59742400C897C1 /* BookClub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookClub.xcdatamodel; sourceTree = "<group>"; };
 		5D9317D11C59742400C897C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,12 +76,10 @@
 		5D9317C11C59742400C897C1 /* BookClub */ = {
 			isa = PBXGroup;
 			children = (
-				5D9317C81C59742400C897C1 /* ViewController.h */,
-				5D9317C91C59742400C897C1 /* ViewController.m */,
-				5D9317DF1C5975D200C897C1 /* DatabaseFriendsTVC.h */,
-				5D9317E01C5975D200C897C1 /* DatabaseFriendsTVC.m */,
 				5D9317DC1C59756800C897C1 /* SelectedFriendsTVC.h */,
 				5D9317DD1C59756800C897C1 /* SelectedFriendsTVC.m */,
+				5D9317DF1C5975D200C897C1 /* DatabaseFriendsTVC.h */,
+				5D9317E01C5975D200C897C1 /* DatabaseFriendsTVC.m */,
 				081B03541C599A6C00C8346D /* BookTableViewController.h */,
 				081B03551C599A6C00C8346D /* BookTableViewController.m */,
 				5D9317CB1C59742400C897C1 /* Main.storyboard */,
@@ -178,7 +173,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D9317E61C5986A000C897C1 /* Friends+CoreDataProperties.m in Sources */,
-				5D9317CA1C59742400C897C1 /* ViewController.m in Sources */,
 				5D9317C71C59742400C897C1 /* AppDelegate.m in Sources */,
 				5D9317E11C5975D200C897C1 /* DatabaseFriendsTVC.m in Sources */,
 				5D9317D01C59742400C897C1 /* BookClub.xcdatamodeld in Sources */,
