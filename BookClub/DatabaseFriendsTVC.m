@@ -77,7 +77,9 @@
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                 
         self.databaseFriendsArray = [NSJSONSerialization JSONObjectWithData:data options:0 error: nil];
-        NSLog(@"%@",self.databaseFriendsArray[0]);
+        
+//        NSLog(@"%@",self.databaseFriendsArray[0]);
+        
         [self.tableView reloadData];
     }];
     

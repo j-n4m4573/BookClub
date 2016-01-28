@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081B03561C599A6C00C8346D /* BookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081B03551C599A6C00C8346D /* BookTableViewController.m */; };
 		5D9317C41C59742400C897C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317C31C59742400C897C1 /* main.m */; };
 		5D9317C71C59742400C897C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317C61C59742400C897C1 /* AppDelegate.m */; };
 		5D9317CA1C59742400C897C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317C91C59742400C897C1 /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081B03541C599A6C00C8346D /* BookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookTableViewController.h; sourceTree = "<group>"; };
+		081B03551C599A6C00C8346D /* BookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTableViewController.m; sourceTree = "<group>"; };
 		5D9317BF1C59742400C897C1 /* BookClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9317C31C59742400C897C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D9317C51C59742400C897C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				5D9317E01C5975D200C897C1 /* DatabaseFriendsTVC.m */,
 				5D9317DC1C59756800C897C1 /* SelectedFriendsTVC.h */,
 				5D9317DD1C59756800C897C1 /* SelectedFriendsTVC.m */,
+				081B03541C599A6C00C8346D /* BookTableViewController.h */,
+				081B03551C599A6C00C8346D /* BookTableViewController.m */,
 				5D9317CB1C59742400C897C1 /* Main.storyboard */,
 				5D9317D11C59742400C897C1 /* Assets.xcassets */,
 				5D9317D31C59742500C897C1 /* LaunchScreen.storyboard */,
@@ -180,6 +185,7 @@
 				5D9317DE1C59756800C897C1 /* SelectedFriendsTVC.m in Sources */,
 				5D9317C41C59742400C897C1 /* main.m in Sources */,
 				5D9317E71C5986A000C897C1 /* Friends.m in Sources */,
+				081B03561C599A6C00C8346D /* BookTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookClub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jn4m4573.com.BookClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookClub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jn4m4573.com.BookClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -326,6 +334,7 @@
 				5D9317DB1C59742500C897C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

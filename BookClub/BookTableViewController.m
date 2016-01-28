@@ -1,83 +1,55 @@
 //
-//  SelectedFriendsTVC.m
+//  BookTableViewController.m
 //  BookClub
 //
-//  Created by Jamar Gibbs on 1/27/16.
+//  Created by Adish Padhani on 1/27/16.
 //  Copyright © 2016 M1ndful M3d1a. All rights reserved.
 //
 
-#import "SelectedFriendsTVC.h"
-#import "DatabaseFriendsTVC.h"
-#import "Friends.h"
-#import "Friends+CoreDataProperties.h"
-#import "AppDelegate.h"
 #import "BookTableViewController.h"
 
-@interface SelectedFriendsTVC ()
-
-@property NSMutableArray *selectedFriendsArray;
-@property NSManagedObjectContext *moc;
+@interface BookTableViewController ()
 
 @end
 
-@implementation SelectedFriendsTVC
+@implementation BookTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.selectedFriendsArray = [[NSMutableArray alloc]init];
-    AppDelegate *appDelegate = [[UIApplication sharedApplication ]delegate];
-    self.moc = appDelegate.managedObjectContext;
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewWillAppear:(BOOL)animated{
-
-    
-
-    [self loadFriend];
-    
-    [self.tableView reloadData];
-}
-
-
 #pragma mark - Table view data source
-//
+
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
 //    return 0;
 //}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.selectedFriendsArray.count;
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectedCell" forIndexPath:indexPath];
-    cell.textLabel.text = [[self.selectedFriendsArray objectAtIndex:indexPath.row] name];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BookCell" forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
     return cell;
 }
 
-- (void)loadFriend{
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Friends"];
-    
-    NSError *error;
-    
-    self.selectedFriendsArray = [[self.moc executeFetchRequest:request error:&error] mutableCopy];
-    
-    if (error == nil) {
-        [self.tableView reloadData];
-    } else {
-        NSLog(@"AN ERROR OCCURRED");
-    }
-}
 
 /*
 // Override to support conditional editing of the table view.
@@ -113,29 +85,14 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
-    if ([segue.identifier isEqualToString:@"Add"]) {
-        DatabaseFriendsTVC *dbfTVC = segue.destinationViewController;
-        dbfTVC.title = @"Add Friends";
-    }else{
-        BookTableViewController *btTVC = segue.destinationViewController;
-        UITableViewCell *cell;
-        cell = sender;
-        btTVC.title = [NSString stringWithFormat:@"%@",cell.textLabel.text];
-    }
-    
-    
-    
-    
-    
 }
-
+*/
 
 @end
