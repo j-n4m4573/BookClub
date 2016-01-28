@@ -14,6 +14,10 @@
 		5D9317D01C59742400C897C1 /* BookClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317CE1C59742400C897C1 /* BookClub.xcdatamodeld */; };
 		5D9317D21C59742400C897C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9317D11C59742400C897C1 /* Assets.xcassets */; };
 		5D9317D51C59742500C897C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9317D31C59742500C897C1 /* LaunchScreen.storyboard */; };
+		5D9317DE1C59756800C897C1 /* SelectedFriendsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317DD1C59756800C897C1 /* SelectedFriendsTVC.m */; };
+		5D9317E11C5975D200C897C1 /* DatabaseFriendsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317E01C5975D200C897C1 /* DatabaseFriendsTVC.m */; };
+		5D9317E61C5986A000C897C1 /* Friends+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317E31C5986A000C897C1 /* Friends+CoreDataProperties.m */; };
+		5D9317E71C5986A000C897C1 /* Friends.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9317E51C5986A000C897C1 /* Friends.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		5D9317D11C59742400C897C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D9317D41C59742500C897C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D9317D61C59742500C897C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D9317DC1C59756800C897C1 /* SelectedFriendsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedFriendsTVC.h; sourceTree = "<group>"; };
+		5D9317DD1C59756800C897C1 /* SelectedFriendsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedFriendsTVC.m; sourceTree = "<group>"; };
+		5D9317DF1C5975D200C897C1 /* DatabaseFriendsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseFriendsTVC.h; sourceTree = "<group>"; };
+		5D9317E01C5975D200C897C1 /* DatabaseFriendsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseFriendsTVC.m; sourceTree = "<group>"; };
+		5D9317E21C5986A000C897C1 /* Friends+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Friends+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5D9317E31C5986A000C897C1 /* Friends+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Friends+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5D9317E41C5986A000C897C1 /* Friends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friends.h; sourceTree = "<group>"; };
+		5D9317E51C5986A000C897C1 /* Friends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friends.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,10 @@
 		5D9317B61C59742400C897C1 = {
 			isa = PBXGroup;
 			children = (
+				5D9317E21C5986A000C897C1 /* Friends+CoreDataProperties.h */,
+				5D9317E31C5986A000C897C1 /* Friends+CoreDataProperties.m */,
+				5D9317E41C5986A000C897C1 /* Friends.h */,
+				5D9317E51C5986A000C897C1 /* Friends.m */,
 				5D9317C11C59742400C897C1 /* BookClub */,
 				5D9317C01C59742400C897C1 /* Products */,
 			);
@@ -60,13 +76,17 @@
 		5D9317C11C59742400C897C1 /* BookClub */ = {
 			isa = PBXGroup;
 			children = (
-				5D9317C51C59742400C897C1 /* AppDelegate.h */,
-				5D9317C61C59742400C897C1 /* AppDelegate.m */,
 				5D9317C81C59742400C897C1 /* ViewController.h */,
 				5D9317C91C59742400C897C1 /* ViewController.m */,
+				5D9317DF1C5975D200C897C1 /* DatabaseFriendsTVC.h */,
+				5D9317E01C5975D200C897C1 /* DatabaseFriendsTVC.m */,
+				5D9317DC1C59756800C897C1 /* SelectedFriendsTVC.h */,
+				5D9317DD1C59756800C897C1 /* SelectedFriendsTVC.m */,
 				5D9317CB1C59742400C897C1 /* Main.storyboard */,
 				5D9317D11C59742400C897C1 /* Assets.xcassets */,
 				5D9317D31C59742500C897C1 /* LaunchScreen.storyboard */,
+				5D9317C51C59742400C897C1 /* AppDelegate.h */,
+				5D9317C61C59742400C897C1 /* AppDelegate.m */,
 				5D9317D61C59742500C897C1 /* Info.plist */,
 				5D9317CE1C59742400C897C1 /* BookClub.xcdatamodeld */,
 				5D9317C21C59742400C897C1 /* Supporting Files */,
@@ -152,10 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9317E61C5986A000C897C1 /* Friends+CoreDataProperties.m in Sources */,
 				5D9317CA1C59742400C897C1 /* ViewController.m in Sources */,
 				5D9317C71C59742400C897C1 /* AppDelegate.m in Sources */,
+				5D9317E11C5975D200C897C1 /* DatabaseFriendsTVC.m in Sources */,
 				5D9317D01C59742400C897C1 /* BookClub.xcdatamodeld in Sources */,
+				5D9317DE1C59756800C897C1 /* SelectedFriendsTVC.m in Sources */,
 				5D9317C41C59742400C897C1 /* main.m in Sources */,
+				5D9317E71C5986A000C897C1 /* Friends.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
